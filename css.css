@@ -1,0 +1,74 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 12px 'lucida grande',tahoma,verdana,arial,sans-serif;
+}
+.chat_wrapper {
+	background: #CCCCCC;
+	border: 1px solid #999999;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+.chat_wrapper .message_box {
+	background: #FFFFFF;
+	overflow: auto;
+	border: 1px solid #999999;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 44px;
+}
+.chat_wrapper .message_box > div {
+	border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.chat_wrapper .message_box > div > div {
+	display: inline-block;
+	padding: 3px;
+	box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+.chat_wrapper .message_box .uname { 
+	text-align: right;
+	font-weight: bold;
+	position: absolute;
+	height: 100%;
+	width: 100px;
+	border-right: 1px solid #ddd;
+}
+.chat_wrapper .message_box .time {
+	float:right;
+	color: #BDBDBD;
+	font-style: italic;
+	margin-right: 4px;
+}
+.chat_wrapper .message_box .msg {
+	width: 100%;
+	padding-left: 103px;
+}
+
+.chat_wrapper .panel {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+}
+.chat_wrapper .panel .span { float: left; position: relative; }
+.chat_wrapper .panel .span-sm { width: 18.5%; }
+.chat_wrapper .panel .span-lg { width: 60%; margin: 0 1.5%; }
+.chat_wrapper .panel input,
+.chat_wrapper .panel button {
+	padding: 2px;
+	margin: 0;
+	width: 100%;
+	background-color: white;
+	border: 1px solid #999999;
+}
+.chat_wrapper .panel button:hover {background-color: #EEE;}
+.user_message{color: #88B6E0;}
