@@ -80,7 +80,7 @@ N8_Chat.prototype.connect = function() {
 
 	this.websocket.onerror = function(ev) {
 		console.log(ev);
-		this.add_msg('Error Occurred - ' + ev.data, undefined, undefined, undefined);
+		if (ev.data) this.add_msg('Error Occurred - ' + ev.data, undefined, undefined, undefined);
 	}.bind(this);
 
 	this.websocket.onmessage = function(ev) {
